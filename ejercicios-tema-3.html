@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ejercicios tema 3</title>
+  <style></style>
+</head>
+
+<body>
+  <script>
+    // Primera parte:
+    // Crear una función con tres parámetros que sean números que se suman entre sí.
+    // Llamar a la función en el main y darle valores.
+
+    function sumaTres(a, b, c) {
+      return a + b + c;
+    }
+    console.log(sumaTres(1, 2, 3));
+
+
+    // Segunda parte:
+    // Crear una clase coche.
+    // Dentro de la clase coche, una variable numérica que almacene el número de puertas que tiene.
+    // Una función que incremente el número de puertas que tiene el coche.
+    // Crear un objeto miCoche en el main y añadirle una puerta.
+    // Mostrar el número de puertas que tiene el objeto.
+
+    class Coche {
+      constructor() {
+        this.num_puertas = 4;
+      }
+      anadir_puerta() {
+        this.num_puertas++;
+      }
+    }
+    let miCoche = new Coche();
+    miCoche.anadir_puerta();
+
+    console.log(`Mi coche tiene ${miCoche.num_puertas} puertas`);
+
+
+
+
+
+  </script>
+</body>
+
+</html>
